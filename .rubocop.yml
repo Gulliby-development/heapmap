@@ -1,0 +1,28 @@
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  TargetRubyVersion: 3.4
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Metrics:
+  Enabled: false
+
+# a row of a spec file is one line, whatever its length; its argument lists are plain arrays
+Layout/LineLength:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+# git decides the line endings (.gitattributes); RuboCop's autocorrect on Windows writes CRLF, which this cop
+# would then report and cannot repair.
+Layout/EndOfLine:
+  Enabled: false
